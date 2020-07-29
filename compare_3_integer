@@ -1,0 +1,43 @@
+#세개의 정수를 입력받아 대, 중, 소 찾아 출력하는 알고리즘 ( 단, 동일한  값은 없다.)
+
+
+print("세개의 정수를 입력받아 비교하는 프로그램입니다.")
+
+a=int(input("A번째 정수를 입력해주세요 : "))
+b=int(input("B번째 정수를 입력해주세요 : "))
+c=int(input("C번쨰 정수를 입력해주세요 : "))
+
+if a>b:
+    if a>c:
+        max=a
+        if b>c:
+            me=b
+            min=c
+        else:
+            me=c
+            min=b
+    else:
+        max=c
+        me=a
+        min=b
+elif b>c:
+    max=b
+    if a>c:
+        me=a
+        min=c
+    else:
+        me=c
+        min=a
+else:
+    max=c
+    me=b
+    min=a
+
+
+print("제일 큰 값 : ",max)
+print("중간 값 : " , me)
+print("제일 작은 값 : ", min)
+
+
+
+          
