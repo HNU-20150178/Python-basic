@@ -1,0 +1,30 @@
+# 반복문 종류
+# 1~ 100 정수중 홀수 만 출력( 단, 한줄에 10개씩 출력)
+# 1 ~ 100 정수중 짝수 만 출력( 단, 한줄에 10개씩 출력)
+
+''' 1 3 5 7 9'''
+
+
+for a in range(1,101,2):
+    print(a,end = "\t")
+    if (a+1)%20==0:
+       print()
+
+       
+'''
+cnt를 활용한 방법
+cnt=0
+for a in range(1,101,2):
+    print(a,end = "\t")
+    cnt=cnt+1
+    if cnt%10==0:
+       print()
+'''
+
+
+for b in range (101):
+    if b%2==0:
+        print(b,end="\t")
+        if b%20==0:
+            print()
+            
