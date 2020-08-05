@@ -1,0 +1,14 @@
+
+
+pay = int ( input ("급여 : " )) # 343535 입력을 했겠죠?
+sw = 1
+money = 50000
+for x in range(10):
+    print(int(money),"원 : ",int(pay//money) ) # 몫이 나오고
+    pay %=  money
+    if sw == 1:
+        money /= 5 #5로 나눈다.
+        sw=0
+    else:
+        money /= 2
+        sw=1
