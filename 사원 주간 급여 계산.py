@@ -35,13 +35,13 @@ while(1):
     
         
     if Grade == 1:                      #시급 설정
-        Gpay += 10000
+        Gpay = 10000
         
     elif Grade == 2:
-        Gpay += 5000
+        Gpay = 5000
         
     elif Grade == 3:
-        Gpay += 2000                    #시급 설정 종료
+        Gpay = 2000                    #시급 설정 종료
         
     if Hour > 36 and Hour <=50:
         Payment = (Hour * Gpay) * 1.5
