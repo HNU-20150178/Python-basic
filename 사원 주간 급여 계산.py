@@ -24,8 +24,8 @@ Gpaytot=0  # 급여합계
 while(1):
     ID=str(input("ID를 입력하시오 : "))
     cnt += 1
-    Gpaytot += Gpay 
-    Gpayave = Gpaytot // cnt
+    Gpaytot += payment
+    Gpayave = Gpaytot / cnt
     if ID == 'end': #여기에 프로그램 종료를 넣어줘야 밑의 Grade, Hour 값의 입력을 받지않고 끝난다.
         print("급여합계 : ", Gpaytot)
         print("급여평균 : ", Gpayave)
